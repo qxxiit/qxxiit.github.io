@@ -6,4 +6,4 @@ tags:
 excerpt: "How I built an end-to-end CV pipeline for object detection."
 ---
 
-Full post content goes here...
+Full post content goes here.
