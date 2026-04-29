@@ -31,8 +31,13 @@ In this page, I share my studies in CSE.
 {% endfor %}
 
 {% comment %} Posts without any tags {% endcomment %}
+{% assign untagged = false %}
 {% for post in site.cse reversed %}
   {% if post.tags.size == 0 %}
+    {% unless untagged %}
+      <h2>Other</h2>
+      {% assign untagged = true %}
+    {% endunless %}
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
