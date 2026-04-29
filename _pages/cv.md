@@ -11,7 +11,7 @@ author_profile: true
 
 ---
 
-## Blog Post Timeline
+## Archive Timeline
 
 {% assign all = "" | split: "" %}
 {% for post in site.CSE %}{% assign all = all | push: post %}{% endfor %}
