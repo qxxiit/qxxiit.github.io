@@ -11,7 +11,7 @@ locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "qxxiit Archive"
 title_separator          : "-"
-name                     : &name "Lloyd Moon"
+name                     : &name "qxxiit"
 description              : &description "May I grow into a soul worthy of the brilliance that defines you."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://qxxiit.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
@@ -24,13 +24,13 @@ repository               : "qxxiit/qxxiit.github.io"
 author:
   # Biographic information
   avatar           : "bird.jpeg"
-  name             : "Your Sidebar Name"
+  name             : "qxxiit"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Nice to meet you!"
+  location         : "South Korea"
+  employer         : "POSTECH CSE 25"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "lm2674@postech.ac.kr" 
 
   # Academic websites
   academia         : # URL
