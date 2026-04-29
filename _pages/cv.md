@@ -7,30 +7,19 @@ author_profile: true
 
 ## Education
 
-2025-        B.S. Student in Computer Science and Engineering, POSTECH
-2022-2025    Seoul High
+- **B.S. in Computer Science and Engineering**, POSTECH, 2025–present
 
+---
 
-## Work experience
+## Blog Post Timeline
 
-* Fall 2023: Game Dev (Steam)
-  * Seoul High
-  * Duties includes: Programming, graphic design, composing original soundtracks, etc
-  * Supervisor: The Users
-
- 
-## Skills
-* CSE
-  * Sub-skill
-  * Sub-skill
-* Art
-* Music
-
-
-## Archive Timeline
-
-{% assign all_posts = site.CSE | concat: site.Art | concat: site.Music | concat: site.Other | sort: "date" | reverse %}
-{% assign posts_by_year = all_posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+{% assign all = "" | split: "" %}
+{% for post in site.CSE %}{% assign all = all | push: post %}{% endfor %}
+{% for post in site.Art %}{% assign all = all | push: post %}{% endfor %}
+{% for post in site.Music %}{% assign all = all | push: post %}{% endfor %}
+{% for post in site.Other %}{% assign all = all | push: post %}{% endfor %}
+{% assign all = all | sort: "date" | reverse %}
+{% assign posts_by_year = all | group_by_exp: "post", "post.date | date: '%Y'" %}
 
 {% for year in posts_by_year %}
 ### {{ year.name }}
