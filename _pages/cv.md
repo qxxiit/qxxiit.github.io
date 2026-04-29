@@ -16,11 +16,6 @@ Education
 
 Work experience
 ======
-* Spring 2099: Research Assistant
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
- 
 * Fall 2023: Game Dev (Steam)
   * Seoul High
   * Duties includes: Programming, graphic design, composing original soundtracks, etc
