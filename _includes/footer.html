@@ -1,18 +1,28 @@
 {% include base_path %}
 
 <style>
-.page__footer-follow .fa-link        { color: #2979FF; }
-.page__footer-follow .fa-envelope    { color: #D44638; }
-.page__footer-follow .fa-github      { color: #333333; }
-.page__footer-follow .fa-instagram   { color: #E4405F; }
-.page__footer-follow .fa-steam       { color: #1B2838; }
-.page__footer-follow .fa-youtube     { color: #FF0000; }
-.page__footer-follow .fa-rss-square  { color: #FFA500; }
-
-@media (prefers-color-scheme: dark) {
-  .page__footer-follow .fa-github    { color: #f0f0f0; }
-  .page__footer-follow .fa-steam     { color: #66c0f4; }
+.page__footer {
+  background-color: #24292e !important;  /* dark color for both modes */
+  color: #ffffff !important;
 }
+.page__footer-follow a,
+.page__footer-follow strong,
+.page__footer-copyright,
+.page__footer-copyright a {
+  color: #ffffff !important;
+}
+.page__footer-copyright a:hover,
+.page__footer-follow a:hover {
+  color: #cccccc !important;
+}
+
+.page__footer-follow .fa-link        { color: #5C9AFF !important; }
+.page__footer-follow .fa-envelope    { color: #EA7B6E !important; }
+.page__footer-follow .fa-github      { color: #f0f0f0 !important; }
+.page__footer-follow .fa-instagram   { color: #E4405F !important; }
+.page__footer-follow .fa-steam       { color: #66c0f4 !important; }
+.page__footer-follow .fa-youtube     { color: #FF4444 !important; }
+.page__footer-follow .fa-rss-square  { color: #FFBB33 !important; }
 </style>
 
 <div class="page__footer-follow">
