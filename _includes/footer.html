@@ -1,5 +1,20 @@
 {% include base_path %}
 
+<style>
+.page__footer-follow .fa-link        { color: #2979FF; }
+.page__footer-follow .fa-envelope    { color: #D44638; }
+.page__footer-follow .fa-github      { color: #333333; }
+.page__footer-follow .fa-instagram   { color: #E4405F; }
+.page__footer-follow .fa-steam       { color: #1B2838; }
+.page__footer-follow .fa-youtube     { color: #FF0000; }
+.page__footer-follow .fa-rss-square  { color: #FFA500; }
+
+@media (prefers-color-scheme: dark) {
+  .page__footer-follow .fa-github    { color: #f0f0f0; }
+  .page__footer-follow .fa-steam     { color: #66c0f4; }
+}
+</style>
+
 <div class="page__footer-follow">
   <ul class="social-icons">
     <li><strong>Follow:</strong></li>
@@ -20,6 +35,9 @@
     {% endif %}
     {% if site.author.youtube %}
       <li><a href="https://youtube.com/@{{ site.author.youtube }}"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a></li>
+    {% endif %}
+    {% if site.atom_feed.hide != true %}
+      <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
     {% endif %}
   </ul>
 </div>
