@@ -29,7 +29,7 @@ author_profile: true
 
 ## Archive Timeline
 
-{% assign all_posts = site.cse | concat: site.art | concat: site.music | concat: site.other | sort: "date" | reverse %}
+{% assign all_posts = site.CSE | concat: site.Art | concat: site.Music | concat: site.Other | sort: "date" | reverse %}
 {% assign posts_by_year = all_posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
 {% for year in posts_by_year %}
