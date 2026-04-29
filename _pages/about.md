@@ -1,13 +1,15 @@
 ---
 permalink: /
-title: "Welcome to the archive"
+title: "Home"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-**This is the home page**
+Welcome to the archive.
+
+**Recent posts**
 =====
 This is the home page.
 
