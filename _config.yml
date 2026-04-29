@@ -221,9 +221,18 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-#  teaching:
-#    output: true
-#    permalink: /:collection/:path/
+  CSE:
+    output: true
+    permalink: /:collection/:path/
+  Art:
+    output: true
+    permalink: /:collection/:path/
+  Music:
+    output: true
+    permalink: /:collection/:path/
+  Other:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -243,6 +252,34 @@ defaults:
   - scope:
       path: ""
       type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _CSE
+  - scope:
+      path: ""
+      type: CSE
+    values:
+      layout: single
+      author_profile: true
+  # _Art
+  - scope:
+      path: ""
+      type: Art
+    values:
+      layout: single
+      author_profile: true
+  # _Music
+  - scope:
+      path: ""
+      type: Music
+    values:
+      layout: single
+      author_profile: true
+  # _Other
+  - scope:
+      path: ""
+      type: Other
     values:
       layout: single
       author_profile: true
