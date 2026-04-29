@@ -8,7 +8,7 @@ author_profile: true
 In this page, I share my studies in CSE.
 
 {% assign all_tags = "" %}
-{% for post in site.cse %}
+{% for post in site.CSE %}
   {% for tag in post.tags %}
     {% unless all_tags contains tag %}
       {% if all_tags == "" %}
@@ -23,7 +23,7 @@ In this page, I share my studies in CSE.
 
 {% for tag in tag_array %}
 <h2>{{ tag }}</h2>
-{% for post in site.cse reversed %}
+{% for post in site.CSE reversed %}
   {% if post.tags contains tag %}
     {% include archive-single.html %}
   {% endif %}
@@ -32,7 +32,7 @@ In this page, I share my studies in CSE.
 
 {% comment %} Posts without any tags {% endcomment %}
 {% assign untagged = false %}
-{% for post in site.cse reversed %}
+{% for post in site.CSE reversed %}
   {% if post.tags.size == 0 %}
     {% unless untagged %}
       <h2>Other</h2>
