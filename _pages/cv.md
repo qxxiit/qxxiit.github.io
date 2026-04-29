@@ -9,10 +9,14 @@ redirect_from:
 
 {% include base_path %}
 
+
+
 Education
 ======
 2025-        B.S. Student in Computer Science and Engineering, POSTECH
 2022-2025    Seoul High
+
+
 
 Work experience
 ======
@@ -20,6 +24,8 @@ Work experience
   * Seoul High
   * Duties includes: Programming, graphic design, composing original soundtracks, etc
   * Supervisor: The Users
+
+
  
 Skills
 ======
@@ -28,3 +34,6 @@ Skills
   * Sub-skill
 * Art
 * Music
+
+
+
